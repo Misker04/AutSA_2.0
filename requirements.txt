@@ -1,0 +1,10 @@
+flask==2.3.2
+opencv-python
+torch
+torchvision
+transformers
+librosa
+whisper
+gtts
+numpy
+Pillow
