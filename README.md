@@ -112,7 +112,3 @@ python app.py
 - Whisper by OpenAI
 
 ---
-
-## 📜 License
-
-MIT License
