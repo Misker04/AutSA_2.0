@@ -28,10 +28,10 @@ video_paths = df['path'].tolist()
 labels = df['label'].tolist()
 
 # ⚙️ Hyperparameters
-EPOCHS = 1
-BATCH_SIZE = 16
+EPOCHS = 5
+BATCH_SIZE = 32
 VAL_SPLIT = 0.2
-LEARNING_RATE = 1e-3
+LEARNING_RATE = 0.001
 
 # 🚀 Model setup
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -89,7 +89,7 @@ for epoch in range(EPOCHS):
 
     val_acc = accuracy_score(val_targets, val_preds)
     val_f1 = f1_score(val_targets, val_preds, average='weighted')
-    print(f"✅ Epoch {epoch+1} Validation | Acc: {val_acc:.4f} | F1: {val_f1:.4f}")
+    print(f"✅ Epoch {epoch+1} Validation | Acc: {val_acc * 100:.2f}% | F1: {val_f1:.4f}")
 
 # 💾 Save the trained model
 os.makedirs("models", exist_ok=True)
