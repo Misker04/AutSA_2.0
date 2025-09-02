@@ -3,7 +3,6 @@
 
 AutSA is a real-time assistive AI system designed to support individuals with Autism Spectrum Disorder by recognizing emotional states from video input and simplifying spoken dialogue using speech recognition and synthesis.
 
----
 
 ## Features
 
@@ -13,7 +12,6 @@ AutSA is a real-time assistive AI system designed to support individuals with Au
 - **Text-to-Speech (TTS)** feedback using pyttsx3 or gTTS
 - Modular, Pythonic backend using Flask, OpenCV, PyTorch
 
----
 
 ## Installation Instructions
 
@@ -46,8 +44,6 @@ pyttsx3
 vosk
 transformers     # If using Whisper ASR
 ```
-
----
 
 ## Dataset Setup
 
@@ -87,7 +83,6 @@ python training_loop.py
 - Uses a custom CNN + Transformer model
 - Includes `collate_video_batch` for handling variable-length video sequences
 
----
 
 ## Run the Full System
 
@@ -104,11 +99,9 @@ python app.py
 5. Recognize emotion from facial expressions
 6. Generate appropriate, simplified speech response
 
----
 
 ## Acknowledgements
 
 - RAVDESS Dataset by Livingstone & Russo
 - Whisper by OpenAI
 
----
