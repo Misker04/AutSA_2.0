@@ -1,25 +1,25 @@
 
-# 🤖 AutSA - Autism Social Aid
+# AutSA - Autism Social Aid
 
 AutSA is a real-time assistive AI system designed to support individuals with Autism Spectrum Disorder by recognizing emotional states from video input and simplifying spoken dialogue using speech recognition and synthesis.
 
 ---
 
-## 📦 Features
+## Features
 
-- 🎥 **Video-Based Emotion Recognition** using a custom CNN + Transformer model
-- 🗣️ **Speech Recognition** via Whisper or Vosk
-- ✂️ **Rule-Based Dialogue Simplification** to enhance communication
-- 🔊 **Text-to-Speech (TTS)** feedback using pyttsx3 or gTTS
-- ⚙️ Modular, Pythonic backend using Flask, OpenCV, PyTorch
+- **Video-Based Emotion Recognition** using a custom CNN + Transformer model
+- **Speech Recognition** via Whisper or Vosk
+- **Rule-Based Dialogue Simplification** to enhance communication
+- **Text-to-Speech (TTS)** feedback using pyttsx3 or gTTS
+- Modular, Pythonic backend using Flask, OpenCV, PyTorch
 
 ---
 
-## 🛠️ Installation Instructions
+## Installation Instructions
 
-### 🔹 Step 1: Clone the Repository
+### Step 1: Clone the Repository
 
-### 🔹 Step 2: (Optional) Create a Virtual Environment
+### Step 2: (Optional) Create a Virtual Environment
 
 ```bash
 python -m venv venv
@@ -27,7 +27,7 @@ source venv/bin/activate        # macOS/Linux
 venv\Scripts\activate.bat       # Windows
 ```
 
-### 🔹 Step 3: Install All Required Dependencies
+### Step 3: Install All Required Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -49,9 +49,9 @@ transformers     # If using Whisper ASR
 
 ---
 
-## 📁 Dataset Setup
+## Dataset Setup
 
-### 🔸 Step 1: Download RAVDESS
+### Step 1: Download RAVDESS
 
 - Download from: [RAVDESS on Zenodo](https://zenodo.org/record/1188976)
 - Extract to `dataset/videos/`
@@ -64,7 +64,7 @@ dataset/
 └── labels.csv
 ```
 
-### 🔸 Step 2: Prepare `labels.csv`
+### Step 2: Prepare `labels.csv`
 
 ```bash
 python labels_generator.py
@@ -78,7 +78,7 @@ dataset/videos/Actor_02/03-01-06-02-02-02-06.mp4,1
 ...
 ```
 
-## 🧠 Model Training
+## Model Training
 
 ```bash
 python training_loop.py
@@ -89,7 +89,7 @@ python training_loop.py
 
 ---
 
-## 🎮 Run the Full System
+## Run the Full System
 
 ```bash
 python app.py
@@ -106,7 +106,7 @@ python app.py
 
 ---
 
-## 📢 Acknowledgements
+## Acknowledgements
 
 - RAVDESS Dataset by Livingstone & Russo
 - Whisper by OpenAI
